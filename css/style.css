@@ -1,0 +1,250 @@
+body {
+  background: radial-gradient(circle at top, #f2f5ff 0%, #f9fafb 45%, #eef2ff 100%);
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* Header */
+.app-header {
+  background: #ffffffcc;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 40px rgba(15, 23, 42, 0.08);
+}
+
+.logo-badge {
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #6b4aff, #a855ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-right: 0.6rem;
+}
+
+.btn-gradient {
+  background-image: linear-gradient(135deg, #6b4aff, #a855ff);
+  border: none;
+  color: #fff;
+  box-shadow: 0 12px 30px rgba(107, 74, 255, 0.35);
+}
+
+.btn-gradient:hover {
+  filter: brightness(1.02);
+  color: #fff;
+}
+
+.top-stat-card {
+  border: none;
+  border-radius: 22px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+  background: #ffffff;
+}
+
+.top-stat-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.top-stat-icon.total {
+  background: linear-gradient(135deg, #6b4aff, #a855ff);
+}
+
+.top-stat-icon.fav {
+  background: linear-gradient(135deg, #ffb020, #ff7b39);
+}
+
+.top-stat-icon.emergency {
+  background: linear-gradient(135deg, #ff5b5b, #ff3366);
+}
+
+.search-wrapper {
+  position: relative;
+}
+
+search-wrapper i {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  font-size: 1rem;
+}
+
+.search-wrapper input {
+  padding-left: 40px;
+  border-radius: 999px;
+  border: none;
+  box-shadow: 0 10px 25px rgba(148, 163, 184, 0.25);
+}
+
+.contact-card {
+  border-radius: 26px;
+  border: none;
+  padding: 1.3rem 1.4rem;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.10);
+  background: #ffffff;
+}
+
+.avatar-circle {
+  width: 52px;
+  height: 52px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #6b4aff, #a855ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-right: 0.9rem;
+  position: relative;
+}
+
+.avatar-status {
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  background: #ffb020;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.75rem;
+  box-shadow: 0 0 0 3px #fff;
+}
+
+.contact-actions .btn {
+  border-radius: 14px;
+  padding: 0.45rem 0.7rem;
+}
+
+.badge-pill {
+  border-radius: 999px;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.7rem;
+}
+
+.side-section-card {
+  border-radius: 24px;
+  border: none;
+  padding: 1rem 1.1rem;
+  background: #fff7eb;
+  box-shadow: 0 14px 35px rgba(249, 115, 22, 0.25);
+}
+
+.side-section-card.emergency {
+  background: #ffeef0;
+  box-shadow: 0 14px 35px rgba(239, 68, 68, 0.25);
+}
+
+.mini-contact-card {
+  border-radius: 18px;
+  border: none;
+  padding: 0.75rem 0.9rem;
+  background: #ffffff;
+  box-shadow: 0 12px 32px rgba(148, 163, 184, 0.30);
+}
+
+.mini-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #6b4aff, #a855ff);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  margin-right: 0.6rem;
+  font-size: 0.85rem;
+}
+
+.call-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.call-btn.danger {
+  background: #fee2e2;
+  color: #ef4444;
+}
+
+/* MODAL */
+.modal-content {
+  border-radius: 22px;
+  border: none;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.35);
+}
+
+.modal-header {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.modal-title {
+  font-weight: 700;
+}
+
+.form-control,
+.form-select {
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  padding: 0.6rem 0.85rem;
+  font-size: 0.95rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #6b4aff;
+  box-shadow: 0 0 0 0.15rem rgba(107, 74, 255, 0.15);
+}
+
+.modal-footer {
+  border-top: none;
+  padding-top: 0;
+}
+
+.btn-outline-light-gray {
+  background: #f3f4f6;
+  border-radius: 14px;
+  border: none;
+  color: #111827;
+}
+
+.chips-row label {
+  margin-right: 1.2rem;
+  font-size: 0.9rem;
+}
+
+.chips-row input[type="checkbox"] {
+  margin-right: 0.3rem;
+}
+
+@media (max-width: 992px) {
+  .top-stat-card {
+    margin-bottom: 1rem;
+  }
+  .side-columns {
+    margin-top: 2rem;
+  }
+}
